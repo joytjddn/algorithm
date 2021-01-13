@@ -70,7 +70,9 @@ public class Main_0113_binarySearch {
 				System.out.println("찾음");
 			}else if(key < arr[mid]) {
 				binarySearch(arr, l, mid-1,key);
-			}
+			}else{
+                binarySearch(arr,mid+1,r,key);
+            }
 			
 		}
 	}
